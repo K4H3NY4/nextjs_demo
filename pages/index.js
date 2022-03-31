@@ -7,11 +7,11 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   return (
     <div>
-      <Navbar/>
+  
       <h1>
-        Homepage
+        Homepage new
       </h1>
-      <Footer/>
+   
     </div>
   )
 }
