@@ -42,3 +42,9 @@ footer {
   color: #4979ff;
   text-decoration: underline;
 }
+
+
+.googlemap{
+  height: 400px;
+  width: 400px;
+}
