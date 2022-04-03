@@ -3,7 +3,7 @@ import { createClient } from "contentful";
 import NftCard from '../../components/NftCard';
 
 
-let client = createClient ({
+const client = createClient ({
     space: "ucidywn4lkw6",
     accessToken: "C2YerzOIjGcDFKKhi0zz4vPd3ALwsUsK0ollfTdVdmI",
    
