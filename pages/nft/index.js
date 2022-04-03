@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { createClient } from "contentful";
+import NftCard from '../../components/NftCard';
 
 
 let client = createClient ({
@@ -31,11 +32,21 @@ export default function Nft ({nfts}) {
             <title>NFT</title>
              <meta name='keywords' content='Next Js Demo'/>
           </Head>
-        <div>
-
-       
+        <div className="nft-list">
+            
+        {nfts.map(nft => (
+            <NftCard key={nft.sys.id} nft={nft} />
+        ))}
         </div>
         
+        <style jsx>{`
+            .nft-list {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 20px 60px;
+            }
+
+         `} </style>
         </>
 
             )
